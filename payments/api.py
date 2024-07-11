@@ -43,4 +43,4 @@ def transaction(request, transaction: TransactionSchema):
         if response.get('status') != 'authorized':
             raise Exception()
 
-    return 200, {'transaction_id': 1}
+    return 200, {'transaction_id': transct.id}
